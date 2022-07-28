@@ -1,4 +1,4 @@
-from setup import setup, find_namespace_packages
+from setuptools import setup, find_namespace_packages
 
 setup(name='hello_world_ksa',
       version='0.0.1',
@@ -11,7 +11,7 @@ setup(name='hello_world_ksa',
           "License :: OSI Approved :: MIT License",
           "Operating System :: OS Independent",],
       packages=find_namespace_packages(),
-      entry_points={'console_scripts': ['greeting=hello_world_ksa.main:hello_world']}
+      entry_points={'console_scripts': ['greeting=hello_world_ksa.main:greeting']}
 )
 
 # greeting - команда, яка повинна виконатись у терміналі
